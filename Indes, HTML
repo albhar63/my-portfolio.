@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد المصمم الجرافيكي</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        a { text-decoration: none; color: inherit; }
+
+        /* رأس الصفحة */
+        header {
+            background: linear-gradient(90deg, #ff7e5f, #feb47b);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 { margin: 0; font-size: 2.5em; }
+
+        nav { margin-top: 15px; }
+
+        nav a {
+            margin: 0 15px;
+            font-weight: bold;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+
+        nav a:hover { background-color: rgba(255,255,255,0.3); }
+
+        /* الأقسام */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 30px;
+            color: #ff7e5f;
+        }
+
+        #about p {
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6em;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        /* معرض الأعمال */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .portfolio img {
+            width: 100%;
+            border-radius: 15px;
+            transition: transform 0.4s, box-shadow 0.4s;
+            cursor: pointer;
+        }
+
+        .portfolio img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            display: none;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 15px;
+        }
+
+        .lightbox:target { display: flex; }
+
+        .lightbox .nav-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .lightbox .prev, .lightbox .next {
+            background-color: rgba(255,255,255,0.7);
+            color: #333;
+            font-size: 2em;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .lightbox .prev:hover, .lightbox .next:hover {
+            background-color: rgba(255,255,255,1);
+        }
+
+        /* تواصل معي */
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            resize: none;
+        }
+
+        .contact-form button {
+            padding: 12px;
+            border: none;
+            border-radius: 8px;
+            background: #ff7e5f;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover { background: #feb47b; }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2em; }
+            nav a { display: block; margin: 8px 0; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>محمد المصمم الجرافيكي</h1>
+    <nav>
+        <a href="#about">عن المصمم</a>
+        <a href="#portfolio">معرض الأعمال</a>
+        <a href="#contact">تواصل</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>عن المصمم</h2>
+    <p>أنا مصمم جرافيك محترف أبدع في تصميم الشعارات، البوسترات، والمواد التسويقية الرقمية. أحب تحويل الأفكار إلى تصاميم جذابة تلفت الانتباه وتعكس هوية كل مشروع.</p>
+</section>
+
+<section id="portfolio">
+    <h2>معرض الأعمال</h2>
+    <div class="portfolio">
+        <a href="#img1"><img src="https://via.placeholder.com/300x200?text=تصميم+1" alt="تصميم 1"></a>
+        <a href="#img2"><img src="https://via.placeholder.com/300x200?text=تصميم+2" alt="تصميم 2"></a>
+        <a href="#img3"><img src="https://via.placeholder.com/300x200?text=تصميم+3" alt="تصميم 3"></a>
+        <a href="#img4"><img src="https://via.placeholder.com/300x200?text=تصميم+4" alt="تصميم 4"></a>
+        <a href="#img5"><img src="https://via.placeholder.com/300x200?text=تصميم+5" alt="تصميم 5"></a>
+        <a href="#img6"><img src="https://via.placeholder.com/300x200?text=تصميم+6" alt="تصميم 6"></a>
+    </div>
+</section>
+
+<!-- Lightbox Modals مع أزرار التنقل -->
+<div id="img1" class="lightbox">
+    <a href="#portfolio"><img src="https://via.placeholder.com/1000x700?text=تصميم+1" alt="تصميم 1"></a>
+    <div class="nav-buttons">
+        <a href="#img6" class="prev">&#8249;</a>
+        <a href="#img2" class="next">&#8250;</a>
+    </div>
+</div>
+<div id="img2" class="lightbox">
+    <a href="#portfolio"><img src="https://via.placeholder.com/1000x700?text=تصميم+2" alt="تصميم 2"></a>
+    <div class="nav-buttons">
+        <a href="#img1" class="prev">&#8249;</a>
+        <a href="#img3" class="next">&#8250;</a>
+    </div>
+</div>
+<div id="img3" class="lightbox">
+    <a href="#portfolio"><img src="https://via.placeholder.com/1000x700?text=تصميم+3" alt="تصميم 3"></a>
+    <div class="nav-buttons">
+        <a href="#img2" class="prev">&#8249;</a>
+        <a href="#img4" class="next">&#8250;</a>
+    </div>
+</div>
+<div id="img4" class="lightbox">
+    <a href="#portfolio"><img src="https://via.placeholder.com/1000x700?text=تصميم+4" alt="تصميم 4"></a>
+    <div class="nav-buttons">
+        <a href="#img3" class="prev">&#8249;</a>
+        <a href="#img5" class="next">&#8250;</a>
+    </div>
+</div>
+<div id="img5" class="lightbox">
+    <a href="#portfolio"><img src="https://via.placeholder.com/1000x700?text=تصميم+5" alt="تصميم 5"></a>
+    <div class="nav-buttons">
+        <a href="#img4" class="prev">&#8249;</a>
+        <a href="#img6" class="next">&#8250;</a>
+    </div>
+</div>
+<div id="img6" class="lightbox">
+    <a href="#portfolio"><img src="https://via.placeholder.com/1000x700?text=تصميم+6" alt="تصميم 6"></a>
+    <div class="nav-buttons">
+        <a href="#img5" class="prev">&#8249;</a>
+        <a href="#img1" class="next">&#8250;</a>
+    </div>
+</div>
+
+<section id="contact">
+    <h2>تواصل معي</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="الاسم" required>
+        <input type="email" placeholder="البريد الإلكتروني" required>
+        <textarea rows="5" placeholder="رسالتك" required></textarea>
+        <button type="submit">إرسال</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 محمد المصمم الجرافيكي | جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
