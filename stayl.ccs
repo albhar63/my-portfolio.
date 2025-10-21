@@ -1,0 +1,57 @@
+body {
+  font-family: 'Arial', sans-serif;
+  direction: rtl;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.about, .portfolio, .contact {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 1rem auto;
+}
+
+.gallery {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 200px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact li {
+  margin: 0.5rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #eee;
+  margin-top: 2rem;
+}
