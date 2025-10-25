@@ -1,374 +1,77 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>محمد عمر | Mohamed Omar | Graphic Designer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap');
-        body {
-            font-family: 'Cairo', sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-            color: #ffffff;
-        }
-        .portfolio-item {
-            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-        .portfolio-item:hover {
-            transform: translateY(-10px) scale(1.02);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        }
-        .hero-text {
-            background: linear-gradient(90deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            background-size: 300% 300%;
-            animation: gradientShift 8s ease infinite;
-        }
-        @keyframes gradientShift {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-        .nav-link {
-            position: relative;
-            transition: color 0.3s ease;
-        }
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            right: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-            transition: width 0.3s ease;
-        }
-        .nav-link:hover::after {
-            width: 100%;
-            left: 0;
-            right: auto;
-        }
-        .about-text {
-            line-height: 1.8;
-            text-align: justify;
-        }
-        .skill-bar {
-            height: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 4px;
-            overflow: hidden;
-        }
-        .skill-progress {
-            height: 100%;
-            border-radius: 4px;
-            background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-        }
-        .english-name {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            color: #4ecdc4;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohamed Omer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #0a1f3d;
+      color: white;
+      text-align: center;
+    }
+
+    .logo {
+      margin-top: 30px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+      margin: 20px auto;
+    }
+
+    .title {
+      font-size: 48px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+
+    .contact {
+      font-size: 16px;
+      line-height: 2;
+    }
+
+    .contact a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
-<body class="bg-gray-900">
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-black bg-opacity-80 backdrop-blur-md z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">محمد عمر</span>
-                <br>
-                <span class="english-name text-lg">Mohamed Omar</span>
-            </div>
-            <div class="hidden md:flex space-x-8 space-x-reverse">
-                <a href="#home" class="nav-link hover:text-cyan-300">الرئيسية</a>
-                <a href="#about" class="nav-link hover:text-cyan-300">عني</a>
-                <a href="#portfolio" class="nav-link hover:text-cyan-300">أعمالي</a>
-                <a href="#skills" class="nav-link hover:text-cyan-300">المهارات</a>
-                <a href="#contact" class="nav-link hover:text-cyan-300">اتصل بي</a>
-            </div>
-            <button class="md:hidden text-white">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
-        </div>
-    </nav>
+<body>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center justify-center px-4 pt-20">
-        <div class="text-center max-w-4xl mx-auto">
-            <div class="mb-8">
-               <img src="profile.jpg" alt="Mohamed Omar"
-                 class="h-28 w-28 rounded-full mx-auto border-4 border-cyan-400 p-1 shadow-md object-cover transition duration-300 hover:border-pink-500 hover:shadow-lg">
-                <h1 class="text-4xl md:text-6xl font-bold mb-2 hero-text">محمد عمر</h1>
-                <h2 class="text-2xl md:text-3xl english-name mb-4">Mohamed Omar</h2>
-                <h3 class="text-xl md:text-2xl text-cyan-300 font-semibold mb-6">مصمم جرافيك محترف | Graphic Designer</h3>
-                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-                    أخلق تجارب بصرية استثنائية تجمع بين الإبداع والوظيفية
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button class="bg-gradient-to-r from-pink-500 to-cyan-400 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300 transform hover:scale-105">
-                        عرض أعمالي
-                    </button>
-                    <button class="border-2 border-cyan-400 text-cyan-300 px-8 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300">
-                        تواصل معي
-                    </button>          
+  <div class="logo">MOHAMED OMER</div>
+
+  <img src="images/profile.jpg" alt="Mohamed Omer" class="profile-img" />
+
+  <div class="title">PORTFOLIO</div>
+  <div class="subtitle">To communicate</div>
+
+  <div class="contact">
+    <div>Behance: <a href="https://www.behance.net/mohamedalktob" target="_blank">behance.net/mohamedalktob</a></div>
+    <div>GitHub: <a href="https://albhar63.github.io/my-portfolio/" target="_blank">albhar63.github.io/my-portfolio</a></div>
+    <div>Email: <a href="mailto:ALBHARM47@GMAIL.COM">ALBHARM47@GMAIL.COM</a></div>
+    <div>Phone: <a href="tel:+966530122179">00966550122179</a></div>
   </div>
-</secti
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-20 px-4">
-        <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                    عني | About Me
-                </h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <img src="https://placehold.co/600x700/16213e/4ecdc4?text=Portfolio" alt="مصمم جرافيك" class="rounded-2xl shadow-2xl w-full">
-                </div>
-                <div class="about-text">
-                    <p class="text-lg text-gray-300 mb-6">
-                        مصمم جرافيك محترف بأكثر من 5 سنوات من الخبرة في إنشاء الهويات البصرية والعلامات التجارية المميزة. 
-                        أؤمن بأن التصميم الجيد يجب أن يروي قصة وينقل رسالة بوضوح وجمال.
-                    </p>
-                    <p class="text-lg text-gray-300 mb-6">
-                        بدأت رحلتي في عالم التصميم منذ أن كنت طالباً في كلية الفنون الجميلة، ومنذ ذلك الحين عملت مع أكثر من 
-                        50 عميلاً من مختلف المجالات، من الشركات الناشئة إلى العلامات التجارية العالمية.
-                    </p>
-                    <p class="text-lg text-gray-300">
-                        أستخدم أحدث أدوات التصميم وأتبع أحدث الاتجاهات لضمان تقديم أعمال تتماشى مع متطلبات العصر 
-                        وتحقق الأهداف المرجوة من كل مشروع.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="py-20 px-4 bg-black bg-opacity-30">
-        <div class="container mx-auto max-w-6xl">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                    المهارات | Skills
-                </h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
-            </div>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <h3 class="text-2xl font-semibold mb-6 text-cyan-300">المهارات التقنية | Technical Skills</h3>
-                    <div class="space-y-6">
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-lg">Adobe Photoshop</span>
-                                <span class="text-cyan-400">95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-lg">Adobe Illustrator</span>
-                                <span class="text-cyan-400">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-lg">Adobe InDesign</span>
-                                <span class="text-cyan-400">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-lg">Figma</span>
-                                <span class="text-cyan-400">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="text-2xl font-semibold mb-6 text-cyan-300">المهارات الإبداعية | Creative Skills</h3>
-                    <div class="space-y-4">
-                        <div class="flex items-center space-x-4 space-x-reverse">
-                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center">
-                                <i class="fas fa-palette text-white text-xl"></i>
-                            </div>
-                            
-                          <span class="text-xl">تصميم الهوية البصرية<br>Brand Identity Design</span>
-                        </div>
-                        <div class="flex items-center space-x-4 space-x-reverse">
-                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center">
-                                <i class="fas fa-tshirt text-white text-xl"></i>
-                            </div>
-                    
-                            <span class="text-xl">تصميم الملابس والطباعة<br>Apparel & Print Design</span>
-                        </div>
-                        <div class="flex items-center space-x-4 space-x-reverse">
-                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center">
-                                <i class="fas fa-mobile-alt text-white text-xl"></i>
-                            </div>
-                            <span class="text-xl">تصميم واجهات التطبيقات<br>UI/UX Design</span>
-                        </div>
-                        <div class="flex items-center space-x-4 space-x-reverse">
-                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center">
-                                <i class="fas fa-bullhorn text-white text-xl"></i>
-                            </div>
-                            <span class="text-xl">الإعلانات والتسويق<br>Advertising & Marketing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 px-4">
-        <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                    أعمالي المختارة | Selected Works
-                </h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
-                <p class="text-xl text-gray-400 mt-6 max-w-2xl mx-auto">
-                    مجموعة مختارة من أفضل مشاريعي التي تعكس شغفي بالإبداع والتميز
-                </p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/ff6b6b/ffffff?text=Brand+Identity" alt="هوية بصرية" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                         <img class="img-fluid" src="brand_identity.jpg" alt="هوية العلامة التجارية" class="w-full h-auto rounded-md mr-4" />
-                        <h3 class="text-xl font-semibold text-cyan-300">هوية بصرية لشركة تقنية</h3>
-                        <p class="text-gray-400">Brand Identity for Tech Company</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/4ecdc4/ffffff?text=Mobile+App" alt="تطبيق جوال" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                         <img class="img-fluid" src="mobile.jpg" alt="تصميم بوستر" class="w-full h-auto rounded-md mr-4" />
-                        <h3 class="text-xl font-semibold text-cyan-300">واجهة تطبيق جوال</h3>
-                        <p class="text-gray-400">Mobile App Interface</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/45b7d1/ffffff?text=Packaging" alt="تغليف" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                        <img class="img-fluid" src="packaging.jpg" alt="تصميم التغليف" class="w-32 h-auto rounded-md mr-4" />
-                        <h3 class="text-xl font-semibold text-cyan-300">تصميم تغليف منتج</h3>
-                        <p class="text-gray-400">Product Packaging Design</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/96ceb4/ffffff?text=Poster+Design" alt="بوستر" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                         <img class="img-fluid" src="poster.jpg" alt="تصميم بوستر" class="w-full h-64 rounded-md mr-4" />
-                        <h3 class="text-xl font-semibold text-cyan-300">بوستر حملة تسويقية</h3>
-                        <p class="text-gray-400">Marketing Campaign Poster</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/ffeaa7/1a1a2e?text=Social+Media" alt="سوشيال ميديا" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                        <img class="img-fluid" src="social.jpg" alt="واجهة تطبيق جوال" class="w-full h-auto rounded-md mr-4" />
-                        <h3 class="text-xl font-semibold text-cyan-300">محتوى السوشيال ميديا</h3>
-                        <p class="text-gray-400">Social Media Content</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/a29bfe/ffffff?text=Logo+Design" alt="شعار" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                         <img class="img-fluid" src="loge.jpg" alt="تصميم بوستر" class="w-32 h-auto rounded-md mr-4" />
-                        <h3 class="text-xl font-semibold text-cyan-300">تصميم شعار احترافي</h3>
-                        <p class="text-gray-400">Professional Logo Design</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 px-4 bg-black bg-opacity-30">
-        <div class="container mx-auto max-w-4xl">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                    تواصل معي | Contact Me
-                </h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
-                <p class="text-xl text-gray-400 mt-6">
-                    جاهز لبدء مشروعك القادم؟ دعنا نتحدث!
-                </p>
-            </div>
-            <div class="bg-gray-800 bg-opacity-50 rounded-3xl p-8 backdrop-blur-sm">
-                <form class="space-y-6">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <input type="text" placeholder="الاسم الكامل | Full Name" class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent">
-                        <input type="email" placeholder="البريد الإلكتروني | Email" class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent">
-                    </div>
-                    <input type="text" placeholder="الموضوع | Subject" class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent">
-                    <textarea placeholder="رسالتك | Your Message" rows="6" class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent resize-none"></textarea>
-                    <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-cyan-400 text-white py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300 transform hover:scale-105">
-                        إرسال الرسالة | Send Message
-                    </button>
-                </form><form id="contactForm" ...>
-  <section id="contact" class="py-20 px-4">
-  <div class="container mx-auto max-w-7xl text-center">
-    <h2 class="text-4xl font-bold mb-6">تواصل معي</h2>
-    <p class="mb-4">📧 البريد الإلكتروني: <a href="mailto:albharm47@gmail.com" class="text-cyan-400 hover:underline">albharm47@gmail.com</a></p>
-    <p>📱 واتساب: <a href="https://wa.me/966550122179" target="_blank" class="text-cyan-400 hover:underline">اضغط هنا للتواصل عبر واتساب</a></p>
-</form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 px-4 border-t border-gray-800">
-        <div class="container mx-auto text-center">
-            <div class="text-2xl font-bold mb-2">
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">محمد عمر</span>
-            </div>
-            <div class="english-name text-lg mb-6">Mohamed Omar</div>
-            <div class="flex justify-center space-x-6 space-x-reverse mb-8">
-                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300">
-                    <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-            <p class="text-gray-500">
-                &copy; 2024 محمد عمر | Mohamed Omar. جميع الحقوق محفوظة.
-            </p>
-        </div>
-    </footer>
 </body>
 </html>
-git add .
-git commit -m "Update image paths and names"
-git push origin main
-
-
-
