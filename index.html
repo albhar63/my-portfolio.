@@ -168,17 +168,31 @@
       </p>
     </div>
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
+    
       <!-- Project 1 -->
       <a href="projects/brand-identity.html" class="portfolio-item block">
-       <img src="projects/images/9.jpg" alt="هوية بصرية" class="full-h full-w object-cover" />
-       <img src="projects/Images/10.jpg" alt="هوية بصرية" class="full-h full-w object-cover" /> 
-       <img src="projects/Images/10.jpg" alt="هوية بصرية" class="full-h full-w object-cover" />
-       <img src="projects/Images/11.jpg" alt="هوية بصرية" class="full-h full-w object-cover" />
-       <img src="projects/Images/12.jpg" alt="هوية بصرية" class="full-h full-w object-cover" />
-       <img src="projects/Images/13.jpg" alt="هوية بصرية" class="full-h full-w object-cover" />
-       <img src="projects/Images/14.jpg" alt="هوية بصرية" class="full-h full-w object-cover" />
-       <img src="projects/Images/15.jpg" alt="هوية بصرية" class="full-h full-w object-cover" />
+          <img src="projects/Images/Image1.jpg"
+     alt="مشروع 1"
+     class="w-full h-auto rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+     onclick="document.getElementById('modal1').classList.remove('hidden')" />
+       <div id="modal1" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 hidden">
+  <div class="bg-white p-4 rounded-lg max-w-6xl w-full overflow-y-auto max-h-[90vh]">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-bold text-gray-800">صور مشروع 1</h2>
+      <button onclick="document.getElementById('modal1').classList.add('hidden')" class="text-gray-500 hover:text-red-600 text-2xl font-bold">&times;</button>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <img src="projects/images/Image8.jpg" class="w-full rounded-lg hover:scale-105 transition-transform duration-300" />
+      <img src="projects/images/Image9.jpg" class="w-full rounded-lg hover:scale-105 transition-transform duration-300" />
+      <img src="projects/images/Image10.jpg" class="w-full rounded-lg hover:scale-105 transition-transform duration-300" />
+      <img src="projects/images/Image11.jpg" class="w-full rounded-lg hover:scale-105 transition-transform duration-300" />
+      <img src="projects/images/Image12.jpg" class="w-full rounded-lg hover:scale-105 transition-transform duration-300" />
+      <img src="projects/images/Image13.jpg" class="w-full rounded-lg hover:scale-105 transition-transform duration-300" />
+      <img src="projects/images/Image14.jpg" class="w-full rounded-lg hover:scale-105 transition-transform duration-300" />
+      <img src="projects/images/Image15.jpg" class="w-full rounded-lg hover:scale-105 transition-transform duration-300" />
+    </div>
+  </div>
+</div>
         <div class="mt-4">
              
           <h3 class="text-xl font-semibold text-cyan-300">هوية بصرية لشركة تقنية</h3>
