@@ -75,15 +75,12 @@
     </style>
 </head>
 <body class="bg-gray-900">
+
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-black bg-opacity-80 backdrop-blur-md z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold">
-                <div style="
-
-               <span class="text-white text-xl font-bold whitespace-nowrap px-4 py-2 rounded bg-gray-800 shadow-md">
-محمد عمر 
-</span>
+                <span class="text-white text-xl font-bold whitespace-nowrap px-4 py-2 rounded bg-gray-800 shadow-md">محمد عمر</span>
                 <br>
                 <span class="english-name text-lg">Mohamed Omar</span>
             </div>
@@ -104,17 +101,13 @@
     <section id="home" class="min-h-screen flex items-center justify-center px-4 pt-20">
         <div class="text-center max-w-4xl mx-auto">
             <div class="mb-8">
-               <div style="display: flex; justify-content: center; align-items: center; height: 250px;">
-  <img 
-    src="profile.jpg" 
-    alt="Mohamed Omar" 
-    style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid #00bfff; box-shadow: 0 0 15px rgba(0, 191, 255, 0.5); transition: opacity 0.6s ease-in-out;" 
-    onmouseover="this.style.opacity='0.2'" 
-    onmouseout="this.style.opacity='1'" 
-  />
-</div>
-
-
+                <div style="display: flex; justify-content: center; align-items: center; height: 250px;">
+                    <img 
+                        src="profile.jpg" 
+                        alt="Mohamed Omar" 
+                        style="width: 180px; height: 180px; border-radius: 50%; border: 5px solid #00bfff; box-shadow: 0 0 15px rgba(0, 191, 255, 0.5);"
+                    />
+                </div>
                 <h1 class="text-4xl md:text-6xl font-bold mb-2 hero-text">محمد عمر</h1>
                 <h2 class="text-2xl md:text-3xl english-name mb-4">Mohamed Omar</h2>
                 <h3 class="text-xl md:text-2xl text-cyan-300 font-semibold mb-6">مصمم جرافيك محترف | Graphic Designer</h3>
@@ -122,22 +115,12 @@
                     أخلق تجارب بصرية استثنائية تجمع بين الإبداع والوظيفية
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button class="bg-gradient-to-r from-pink-500 to-cyan-400 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300 transform hover:scale-105">
+                    <a href="#portfolio" class="bg-gradient-to-r from-pink-500 to-cyan-400 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300 transform hover:scale-105">
                         عرض أعمالي
-                    </button>
-                    <button class="border-2 border-cyan-400 text-cyan-300 px-8 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300">
+                    </a>
+                    <a href="#contact" class="border-2 border-cyan-400 text-cyan-300 px-8 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300">
                         تواصل معي
-  <button 
-    @click="showContact = !showContact" 
-    class="border-2 border-cyan-400 text-cyan-300 px-5 py-3 rounded-full font-semibold 
-           transition duration-300 ease-in-out 
-           hover:brightness-125 hover:shadow-[0_0_10px_#0ff]">
-          <p>📧 alibrahimhamad1@gmail.com</p>
-          <p>📱 واتساب: +00966550122179 </p>
-     
-  </div>
-</div>
-</div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -154,96 +137,80 @@
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
-                 <img src="portolio.jpg" alt="My Portfolio" class="rounded-lg shadow-md hover:scale-105 transition duration-300">
-                    <!-- Portfolio Section -->
-<section id="portfolio" class="py-20 px-4">
-  <div class="container mx-auto max-w-7xl">
-    <div class="text-center mb-16">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-        أعمالي المختارة | Selected Works
-      </h2>
-      <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
-      <p class="text-xl text-gray-400 mt-6 max-w-2xl mx-auto">
-        مجموعة مختارة من أفضل مشاريعي التي تعكس شغفي بالإبداع والتميز
-      </p>
-    </div>
-   <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>هوية بصرية لشركة تقنية</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .project-image {
-            width: 100%;
-            max-width: 800px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            margin: 20px 0;
-        }
-        .details {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>هوية بصرية لشركة تقنية</h1>
-
-        <!-- صورة المشروع -->
-        <img src="path/to/your/image.jpg" alt="هوية بصرية" class="project-image">
-
-        <!-- تفاصيل المشروع -->
-        <div class="details">
-            <h2>عن المشروع</h2>
-            <p>تم تصميم الهوية البصرية الكاملة لشركة تقنية ناشئة، بما في ذلك الشعار، الألوان، الخطوط، وتطبيقها على مختلف الوسائط.</p>
-
-            <h2>المهام</h2>
-            <ul>
-                <li>تحليل العلامة التجارية والجمهور المستهدف.</li>
-                <li>تصميم شعار مبتكر وقابل للتطبيق.</li>
-                <li>وضع نظام ألوان وخطوط متسق.</li>
-                <li>تطبيق الهوية على بطاقات عمل، حقيبة، وموقع إلكتروني.</li>
-            </ul>
-
-            <h2>الأدوات المستخدمة</h2>
-            <p>Adobe Illustrator, Adobe Photoshop, Figma</p>
-        </div>
-    </div>
-</body>
-</html>
-                <div class="about-text">
-                    <p class="text-lg text-gray-300 mb-6">
+                    <img src="portolio.jpg" alt="My Portfolio" class="rounded-lg shadow-md hover:scale-105 transition duration-300">
+                </div>
+                <div>
+                    <p class="text-lg text-gray-300 mb-6 about-text">
                         مصمم جرافيك محترف بأكثر من 5 سنوات من الخبرة في إنشاء الهويات البصرية والعلامات التجارية المميزة. 
                         أؤمن بأن التصميم الجيد يجب أن يروي قصة وينقل رسالة بوضوح وجمال.
                     </p>
-                    <p class="text-lg text-gray-300 mb-6">
+                    <p class="text-lg text-gray-300 mb-6 about-text">
                         بدأت رحلتي في عالم التصميم منذ أن كنت طالباً في كلية الفنون الجميلة، ومنذ ذلك الحين عملت مع أكثر من 
                         50 عميلاً من مختلف المجالات، من الشركات الناشئة إلى العلامات التجارية العالمية.
                     </p>
-                    <p class="text-lg text-gray-300">
+                    <p class="text-lg text-gray-300 about-text">
                         أستخدم أحدث أدوات التصميم وأتبع أحدث الاتجاهات لضمان تقديم أعمال تتماشى مع متطلبات العصر 
                         وتحقق الأهداف المرجوة من كل مشروع.
                     </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section (مرة واحدة فقط) -->
+    <section id="portfolio" class="py-20 px-4">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
+                    أعمالي المختارة | Selected Works
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
+                <p class="text-xl text-gray-400 mt-6 max-w-2xl mx-auto">
+                    مجموعة مختارة من أفضل مشاريعي التي تعكس شغفي بالإبداع والتميز
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-item cursor-pointer" data-project="branding">
+                    <img src="https://placehold.co/400x300/ff6b6b/ffffff?text=Brand+Identity" alt="هوية بصرية" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">هوية بصرية لشركة تقنية</h3>
+                        <p class="text-gray-400">Brand Identity for Tech Company</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="mobile">
+                    <img src="https://placehold.co/400x300/4ecdc4/ffffff?text=Mobile+App" alt="تطبيق جوال" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">واجهة تطبيق جوال</h3>
+                        <p class="text-gray-400">Mobile App Interface</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="packaging">
+                    <img src="https://placehold.co/400x300/45b7d1/ffffff?text=Packaging" alt="تغليف" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">تصميم تغليف منتج</h3>
+                        <p class="text-gray-400">Product Packaging Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="poster">
+                    <img src="https://placehold.co/400x300/96ceb4/ffffff?text=Poster+Design" alt="بوستر" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">بوستر حملة تسويقية</h3>
+                        <p class="text-gray-400">Marketing Campaign Poster</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="social">
+                    <img src="https://placehold.co/400x300/ffeaa7/1a1a2e?text=Social+Media" alt="سوشيال ميديا" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">محتوى السوشيال ميديا</h3>
+                        <p class="text-gray-400">Social Media Content</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="logo">
+                    <img src="https://placehold.co/400x300/a29bfe/ffffff?text=Logo+Design" alt="شعار" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">تصميم شعار احترافي</h3>
+                        <p class="text-gray-400">Professional Logo Design</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -307,13 +274,6 @@
                             <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center">
                                 <i class="fas fa-palette text-white text-xl"></i>
                             </div>
-                            <div class="category">
-  <img src="images/packaging.jpg" alt="Packaging Design" class="rounded-lg shadow-md hover:scale-105 transition">
-  <h3>Packaging | تصميم التغليف</h3>
-  <p>Product Packaging Design</p>
-</div>
-
-
                             <span class="text-xl">تصميم الهوية البصرية<br>Brand Identity Design</span>
                         </div>
                         <div class="flex items-center space-x-4 space-x-reverse">
@@ -340,106 +300,6 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 px-4">
-        <div class="container mx-auto max-w-7xl">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                    أعمالي المختارة | Selected Works
-                </h2>
-                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
-                <p class="text-xl text-gray-400 mt-6 max-w-2xl mx-auto">
-                    مجموعة مختارة من أفضل مشاريعي التي تعكس شغفي بالإبداع والتميز
-                </p>
-            </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/ff6b6b/ffffff?text=Brand+Identity" alt="هوية بصرية" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                        <!-- Brand Identity -->
-<div class="text-center">
-  <img src="brand_identity.jpg" alt="Brand Identity Design" class="rounded-lg shadow-md hover:scale-105 transition w-full max-w-md mx-auto">
-  <h3 class="mt-4 font-bold text-lg">Brand Identity | الهوية التجارية لشركة</h3>
-  <p class="text-gray-600">Brand Identity Design for a Company</p>
-</div>
-
-                        <h3 class="text-xl font-semibold text-cyan-300">هوية بصرية لشركة تقنية</h3>
-                        <p class="text-gray-400">Brand Identity for Tech Company</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/4ecdc4/ffffff?text=Mobile+App" alt="تطبيق جوال" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                        <!-- Mobile App -->
-<div class="text-center">
-  <img src="mobile.jpg" alt="Mobile App UI Design" class="rounded-lg shadow-md hover:scale-105 transition w-full max-w-md mx-auto">
-  <h3 class="mt-4 font-bold text-lg">Mobile App | واجهة تطبيق جوال</h3>
-  <p class="text-gray-600">Mobile App UI Design</p>
-</div>
-                        <h3 class="text-xl font-semibold text-cyan-300">واجهة تطبيق جوال</h3>
-                        <p class="text-gray-400">Mobile App Interface</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/45b7d1/ffffff?text=Packaging" alt="تغليف" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                        <!-- Packaging -->
-<div class="text-center">
-  <img src="packaging.jpg" alt="Packaging Design" class="rounded-lg shadow-md hover:scale-105 transition w-full max-w-md mx-auto">
-  <h3 class="mt-4 font-bold text-lg">Packaging | تصميم التغليف</h3>
-  <p class="text-gray-600">Product Packaging Design</p>
-</div>
-                        <h3 class="text-xl font-semibold text-cyan-300">تصميم تغليف منتج</h3>
-                        <p class="text-gray-400">Product Packaging Design</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/96ceb4/ffffff?text=Poster+Design" alt="بوستر" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                        <!-- Poster Design -->
-<div class="text-center">
-  <img src="poster.jpg" alt="Poster Design" class="rounded-lg shadow-md hover:scale-105 transition w-full max-w-md mx-auto">
-  <h3 class="mt-4 font-bold text-lg">Poster Design | تصميم ملصق إعلاني</h3>
-  <p class="text-gray-600">Advertising Poster</p>
-</div>
-
-
-                        <h3 class="text-xl font-semibold text-cyan-300">بوستر حملة تسويقية</h3>
-                        <p class="text-gray-400">Marketing Campaign Poster</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/ffeaa7/1a1a2e?text=Social+Media" alt="سوشيال ميديا" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                        <!-- Social Media -->
-<div class="text-center">
-  <img src="social.jpg" alt="Social Media Content" class="rounded-lg shadow-md hover:scale-105 transition w-full max-w-md mx-auto">
-  <h3 class="mt-4 font-bold text-lg">Social Media | محتوى وسائل التواصل</h3>
-  <p class="text-gray-600">Social Media Content</p>
-</div>
-
-                        <h3 class="text-xl font-semibold text-cyan-300">محتوى السوشيال ميديا</h3>
-                        <p class="text-gray-400">Social Media Content</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="https://placehold.co/400x300/a29bfe/ffffff?text=Logo+Design" alt="شعار" class="w-full h-64 object-cover rounded-2xl">
-                    <div class="mt-4">
-                        <!-- Logo Design -->
-<div class="text-center">
-  <img src="loge.jpg" alt="Logo Design" class="rounded-lg shadow-md hover:scale-105 transition w-full max-w-md mx-auto">
-  <h3 class="mt-4 font-bold text-lg">Logo Design | تصميم الشعار</h3>
-  <p class="text-gray-600">Professional Logo Design</p>
-</div>
-
-                        <h3 class="text-xl font-semibold text-cyan-300">تصميم شعار احترافي</h3>
-                        <p class="text-gray-400">Professional Logo Design</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="py-20 px-4 bg-black bg-opacity-30">
         <div class="container mx-auto max-w-4xl">
@@ -447,15 +307,14 @@
                 <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
                     تواصل معي | Contact Me
                 </h2>
-                <div class="contact-links">
-               <p>📧 alibrahimhamad1@gmail.com</p>
-               <p>📱 واتساب: +00966550122179 </p>
-   
-</div>
                 <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
                 <p class="text-xl text-gray-400 mt-6">
                     جاهز لبدء مشروعك القادم؟ دعنا نتحدث!
                 </p>
+                <div class="contact-links mt-4 text-gray-300">
+                    <p>📧 alibrahimhamad1@gmail.com</p>
+                    <p>📱 واتساب: +00966550122179</p>
+                </div>
             </div>
             <div class="bg-gray-800 bg-opacity-50 rounded-3xl p-8 backdrop-blur-sm">
                 <form class="space-y-6">
@@ -468,11 +327,6 @@
                     <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-cyan-400 text-white py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300 transform hover:scale-105">
                         إرسال الرسالة | Send Message
                     </button>
-                     <div class="contact-links">
-                    <p>📧 alibrahimhamad1@gmail.com</p>
-                    <p>📱 واتساب: +00966550122179 </p>
-   
-</div>
                 </form>
             </div>
         </div>
@@ -500,12 +354,80 @@
                 </a>
             </div>
             <p class="text-gray-500">
-                &copy; 2024 محمد عمر | Mohamed Omar. جميع الحقوق محفوظة.
+                &copy; 2025 محمد عمر | Mohamed Omar. جميع الحقوق محفوظة.
             </p>
         </div>
     </footer>
+
+    <!-- Portfolio Modal -->
+    <div id="projectModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-90 overflow-y-auto">
+        <div class="min-h-screen flex flex-col items-center justify-start pt-12 px-4">
+            <button class="self-end text-white text-4xl mb-6 hover:text-cyan-300 focus:outline-none">&times;</button>
+            <div id="modalGallery" class="flex flex-wrap justify-center gap-6"></div>
+        </div>
+    </div>
+
+    <script>
+        // ✅ عرّف مشاريعك الحقيقية هنا
+        const projects = {
+            branding: [
+                "images/branding/1.jpg",
+                "images/branding/2.jpg",
+                "images/branding/3.jpg"
+            ],
+            mobile: [
+                "images/mobile/1.jpg",
+                "images/mobile/2.jpg"
+            ],
+            packaging: [
+                "images/packaging/1.jpg",
+                "images/packaging/2.jpg",
+                "images/packaging/3.jpg"
+            ],
+            poster: [
+                "images/poster/1.jpg"
+            ],
+            social: [
+                "images/social/1.jpg",
+                "images/social/2.jpg"
+            ],
+            logo: [
+                "images/logo/1.jpg",
+                "images/logo/2.jpg"
+            ]
+        };
+
+        // فتح المشروع عند الضغط
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const key = item.getAttribute('data-project');
+                const gallery = document.getElementById('modalGallery');
+                gallery.innerHTML = '';
+
+                if (projects[key]) {
+                    projects[key].forEach(src => {
+                        const img = document.createElement('img');
+                        img.src = src;
+                        img.alt = "Project detail";
+                        img.className = "max-w-full max-h-[80vh] rounded-xl shadow-2xl";
+                        gallery.appendChild(img);
+                    });
+                    document.getElementById('projectModal').classList.remove('hidden');
+                }
+            });
+        });
+
+        // إغلاق الـ Modal
+        document.querySelector('#projectModal button').addEventListener('click', () => {
+            document.getElementById('projectModal').classList.add('hidden');
+        });
+
+        document.getElementById('projectModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('projectModal')) {
+                document.getElementById('projectModal').classList.add('hidden');
+            }
+        });
+    </script>
+
 </body>
 </html>
-git add .
-git commit -m "Add assets folder"
-git push origin main
