@@ -359,47 +359,44 @@
         </div>
     </div>
 </section>
+ <!-- نموذج الاتصال -->
+<form id="contact-form" action="https://formspree.io/f/mgvppkoj" method="POST">
+  <input type="text" name="name" placeholder="اسمك" required />
+  <input type="email" name="email" placeholder="بريدك الإلكتروني" required />
+  <textarea name="message" placeholder="رسالتك" required></textarea>
+  <button type="submit">إرسال</button>
+</form>
 
-<!-- ========== سكريبتات EmailJS (يجب وضعها قبل </body>) ========== -->
-
-<!-- 1. مكتبة EmailJS -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-<!-- 2. تهيئة EmailJS -->
-<script type="text/javascript">
-  // 👇 ضع User ID الخاص بك من EmailJS هنا
-  (function() {
-    emailjs.init("nmbnAjhTroog8g0pX");
-  })();
-</script>
-
-<!-- 3. إرسال النموذج -->
 <script>
   document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // منع إعادة تحميل الصفحة
+    event.preventDefault();
 
-    // عرض رسالة تحميل (اختياري)
+    const formData = new FormData(this);
     const submitBtn = this.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
     submitBtn.innerHTML = 'جاري الإرسال...';
     submitBtn.disabled = true;
 
-    // إرسال الرسالة
-    emailjs.send(
-      "albhar63",   // ← ضع Service ID هنا
-      "template-9dibxij",  // ← ضع Template ID هنا
-      this
-    )
-    .then(function() {
-      alert('✅ تم إرسال رسالتك بنجاح!\nسأرد عليك في أقرب وقت.');
-      document.getElementById('contact-form').reset();
+    fetch(this.action, {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
     })
-    .catch(function(error) {
+    .then(response => {
+      if (response.ok) {
+        alert('✅ تم إرسال رسالتك بنجاح!\nسأرد عليك في أقرب وقت.');
+        this.reset();
+      } else {
+        throw new Error('فشل الإرسال');
+      }
+    })
+    .catch(error => {
       alert('❌ عذراً، حدث خطأ أثناء الإرسال.\nيرجى المحاولة لاحقاً أو مراسلتي مباشرة على البريد.');
       console.error('Error:', error);
     })
     .finally(() => {
-      // استعادة زر الإرسال
       submitBtn.innerHTML = originalText;
       submitBtn.disabled = false;
     });
