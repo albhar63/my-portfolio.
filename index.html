@@ -24,9 +24,9 @@
     <meta name="twitter:url" content="https://albhar63.github.io/">
     <meta name="twitter:title" content="محمد عمر | مصمم جرافيك">
     <meta name="twitter:description" content="أكثر من 5 سنوات خبرة في تصميم الهويات البصرية للعلامات التجارية.">
-    <meta name="twitter:image" content="https://albhar63.github.io/projects/images//102-01.jpg">
+    <meta name="twitter:image" content="https://albhar63.github.io/profile.jpg">
 
-    <!-- Favicon (اختياري لكن موصى به) -->
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 
     <!-- Stylesheets -->
@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Custom Styles (يمكنك نقلها إلى ملف خارجي لاحقاً لأغراض الأداء) -->
+    <!-- Custom Styles -->
     <style>
         body {
             font-family: 'Cairo', sans-serif;
@@ -100,6 +100,31 @@
             font-weight: 600;
             color: #4ecdc4;
         }
+
+        /* أزرار التنقل الجديدة في مودال البورتفوليو */
+        #prevBtn, #nextBtn {
+            background: transparent;
+            border: 2px solid #00bfff; /* نفس لون إطار الصورة الشخصية */
+            color: #00bfff;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            box-shadow: 0 0 12px rgba(0, 191, 255, 0.5);
+            transition: all 0.3s ease;
+            font-weight: bold;
+            font-size: 18px;
+            backdrop-filter: blur(4px);
+            z-index: 10;
+        }
+        #prevBtn:hover, #nextBtn:hover {
+            background: rgba(0, 191, 255, 0.15);
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(0, 191, 255, 0.7);
+            color: white;
+        }
     </style>
 </head>
 <body class="bg-gray-900">
@@ -108,8 +133,7 @@
     <nav class="fixed top-0 w-full bg-black bg-opacity-80 backdrop-blur-md z-50">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="text-2xl font-bold">
-                <span class="text-white text-xl font-bold whitespace-nowrap px-4 py-2 rounded bg-gray-800 shadow-md">محمد عمر</span>
-                <br>
+                <span class="text-white text-xl font-bold whitespace-nowrap px-4 py-2 rounded bg-gray-800 shadow-md">محمد عمر</span><br>
                 <span class="english-name text-lg">Mohamed Omar</span>
             </div>
             <div class="hidden md:flex space-x-8 space-x-reverse">
@@ -119,9 +143,7 @@
                 <a href="#skills" class="nav-link hover:text-cyan-300">المهارات</a>
                 <a href="#contact" class="nav-link hover:text-cyan-300">اتصل بي</a>
             </div>
-            <button class="md:hidden text-white">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
+            <button class="md:hidden text-white"><i class="fas fa-bars text-2xl"></i></button>
         </div>
     </nav>
 
@@ -139,22 +161,10 @@
                 <h1 class="text-4xl md:text-6xl font-bold mb-2 hero-text">محمد عمر</h1>
                 <h2 class="text-2xl md:text-3xl english-name mb-4">Mohamed Omar</h2>
                 <h3 class="text-xl md:text-2xl text-cyan-300 font-semibold mb-6">مصمم جرافيك محترف | Graphic Designer</h3>
-                <p class="text-xl text-gray-300 mb-8 leading-relaxed">
-                    أخلق تجارب بصرية استثنائية تجمع بين الإبداع والوظيفية
-                </p>
+                <p class="text-xl text-gray-300 mb-8 leading-relaxed">أخلق تجارب بصرية استثنائية تجمع بين الإبداع والوظيفية</p>
                 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="#portfolio" class="bg-gradient-to-r from-pink-500 to-cyan-400 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300 transform hover:scale-105">
-                        عرض أعمالي
-                    </a>
-                    <a href="#contact"
-                       class="px-6 py-3 rounded-full font-semibold text-white bg-black border-2 border-cyan-400 
-                             shadow-[0_0_10px_#00ffff] hover:shadow-[0_0_20px_#00ffff] 
-                             hover:scale-105 transition duration-300">
-
-                    </a>
-                    <a href="#contact" class="border-2 border-cyan-400 text-cyan-300 px-8 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300">
-                        تواصل معي
-                    </a>
+                    <a href="#portfolio" class="bg-gradient-to-r from-pink-500 to-cyan-400 text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300 transform hover:scale-105">عرض أعمالي</a>
+                    <a href="#contact" class="border-2 border-cyan-400 text-cyan-300 px-8 py-3 rounded-full font-semibold hover:bg-cyan-400 hover:text-black transition-all duration-300">تواصل معي</a>
                 </div>
             </div>
         </div>
@@ -164,9 +174,7 @@
     <section id="about" class="py-20 px-4">
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                    عني | About Me
-                </h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">عني | About Me</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -174,250 +182,70 @@
                     <img src="projects/images/102-01.jpg" alt="My Portfolio" class="rounded-lg shadow-md hover:scale-105 transition duration-300">
                 </div>
                 <div>
-                    <p class="text-lg text-gray-300 mb-6 about-text">
-                        مصمم جرافيك محترف بأكثر من 5 سنوات من الخبرة في إنشاء الهويات البصرية والعلامات التجارية المميزة. 
-                        أؤمن بأن التصميم الجيد يجب أن يروي قصة وينقل رسالة بوضوح وجمال.
-                    </p>
-                    <p class="text-lg text-gray-300 mb-6 about-text">
-                        بدأت رحلتي في عالم التصميم منذ أن كنت طالباً في كلية الفنون الجميلة، ومنذ ذلك الحين عملت مع أكثر من 
-                        50 عميلاً من مختلف المجالات، من الشركات الناشئة إلى العلامات التجارية العالمية.
-                    </p>
-                    <p class="text-lg text-gray-300 about-text">
-                        أستخدم أحدث أدوات التصميم وأتبع أحدث الاتجاهات لضمان تقديم أعمال تتماشى مع متطلبات العصر 
-                        وتحقق الأهداف المرجوة من كل مشروع.
-                    </p>
+                    <p class="text-lg text-gray-300 mb-6 about-text">مصمم جرافيك محترف بأكثر من 5 سنوات من الخبرة في إنشاء الهويات البصرية والعلامات التجارية المميزة. أؤمن بأن التصميم الجيد يجب أن يروي قصة وينقل رسالة بوضوح وجمال.</p>
+                    <p class="text-lg text-gray-300 mb-6 about-text">بدأت رحلتي في عالم التصميم منذ أن كنت طالباً في كلية الفنون الجميلة، ومنذ ذلك الحين عملت مع أكثر من 50 عميلاً من مختلف المجالات، من الشركات الناشئة إلى العلامات التجارية العالمية.</p>
+                    <p class="text-lg text-gray-300 about-text">أستخدم أحدث أدوات التصميم وأتبع أحدث الاتجاهات لضمان تقديم أعمال تتماشى مع متطلبات العصر وتحقق الأهداف المرجوة من كل مشروع.</p>
                 </div>
             </div>
         </div>
     </section>
-    
-     <!-- ================ قسم البورتفوليو ================ -->
-<section id="portfolio" class="py-20 bg-gray-900">
-  <div class="container mx-auto px-6">
-    <h2 class="text-4xl font-bold text-center mb-12 text-cyan-300">أعمالي</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-      <!-- مشروع: هوية بصرية -->
-      <div class="portfolio-item cursor-pointer" data-project="branding">
-          <img src="projects/images/brand_adentity/9.jpg" alt="واجهة تطبيق" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="mt-4">
-          <h3 class="text-xl font-semibold text-cyan-300">هوية بصرية لشركة تقنية</h3>
-          <p class="text-gray-400">Brand Identity for Tech Company</p>
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-12 text-cyan-300">أعمالي</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="portfolio-item cursor-pointer" data-project="branding">
+                    <img src="projects/images/brand_adentity/9.jpg" alt="هوية بصرية لشركة تقنية" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">هوية بصرية لشركة تقنية</h3>
+                        <p class="text-gray-400">Brand Identity for Tech Company</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="mobile">
+                    <img src="projects/images/mobile/mobile.jpg" alt="واجهة تطبيق جوال" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">واجهة تطبيق جوال</h3>
+                        <p class="text-gray-400">Mobile App Interface</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="packaging">
+                    <img src="projects/images/packaging/packaging.jpg" alt="تصميم تغليف منتج" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">تصميم تغليف منتج</h3>
+                        <p class="text-gray-400">Product Packaging Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="poster_desing">
+                    <img src="projects/images/poster_desing/poster.jpg" alt="تصميم بوستر" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">تصميم بوستر</h3>
+                        <p class="text-gray-400">Poster Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="social_meade">
+                    <img src="projects/images/social_meade/14.jpg" alt="تصميم سوشيال ميديا" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">محتوى السوشيال ميديا</h3>
+                        <p class="text-gray-400">Social Media Content</p>
+                    </div>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="loges">
+                    <img src="projects/images/loges/24.png" alt="تصميم شعار" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
+                    <div class="mt-4">
+                        <h3 class="text-xl font-semibold text-cyan-300">تصميم شعار احترافي</h3>
+                        <p class="text-gray-400">Professional Logo Design</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- مشروع: واجهة تطبيق جوال -->
-      <div class="portfolio-item cursor-pointer" data-project="mobile">
-        <img src="projects/images/mobile/mobile.jpg" alt="واجهة تطبيق" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="mt-4">
-          <h3 class="text-xl font-semibold text-cyan-300">واجهة تطبيق جوال</h3>
-          <p class="text-gray-400">Mobile App Interface</p>
-        </div>
-      </div>
-
-      <!-- مشروع: تصميم تغليف منتج -->
-      <div class="portfolio-item cursor-pointer" data-project="packaging">
-        <img src="projects/images/packaging/packaging.jpg" alt="تغليف منتج" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="mt-4">
-          <h3 class="text-xl font-semibold text-cyan-300">تصميم تغليف منتج</h3>
-          <p class="text-gray-400">Product Packaging Design</p>
-        </div>
-      </div>
-        <!-- مشروع تصميم بوستر -->
-      <div class="portfolio-item cursor-pointer" data-project="poster_desing">
-        <img src="projects/images/poster_desing/poster.jpg" alt="تصميم بوستر" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="mt-4">
-          <h3 class="text-xl font-semibold text-cyan-300">تصميم بوستر</h3>
-          <p class="text-gray-400">Product poster Design</p>
-        </div>
-      </div> 
-        <!--مشروع:تصميم سوشيال ميديا  -->
-      <div class="portfolio-item cursor-pointer" data-project="social_meade">
-        <img src="projects/images/social_meade/14.jpg" alt="تصميم سوشيال ميديا" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="mt-4">
-          <h3 class="text-xl font-semibold text-cyan-300">تصميم  سوشيال ميديا</h3>
-          <p class="text-gray-400">Product social_meade Design</p>
-        </div>
-      </div>
-         <!--مشروع: لوجو -->
-      <div class="portfolio-item cursor-pointer" data-project="loges">
-        <img src="projects/images/loges/24.png" alt="لوجو" class="w-full h-64 object-cover rounded-2xl shadow-lg hover:shadow-xl transition">
-        <div class="mt-4">
-          <h3 class="text-xl font-semibold text-cyan-300">تصميم لوجوا</h3>
-          <p class="text-gray-400">Product  loged Design</p>
-        </div>
-      </div>
-      <!-- أضف مشاريعك الأخرى بنفس الطريقة -->
-
-    </div>
-  </div>
-</section>
-
-<!-- ================ مودال عرض الصور ================ -->
-<div id="projectModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4">
-  <div class="relative w-full max-w-4xl">
-    <!-- زر الإغلاق -->
-    <button id="closeModal" class="absolute top-0 right-0 text-white text-4xl z-10 p-2 hover:text-cyan-300 focus:outline-none">&times;</button>
-
-    <!-- عرض الصورة الحالية (كبيرة) -->
-    <div id="modalImageContainer" class="flex items-center justify-center">
-      <img id="modalImage" src="" alt="Project detail" class="max-h-[80vh] w-auto object-contain rounded-xl shadow-2xl cursor-zoom-in" />
-    </div>
-
-    <!-- أزرار التنقل -->
-    <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-cyan-600 focus:outline-none"><</button>
-    <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-cyan-600 focus:outline-none">></button>
-
-    <!-- عداد الصور -->
-    <div id="imageCounter" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-medium bg-black bg-opacity-50 px-3 py-1 rounded-full"></div>
-  </div>
-</div>
-
-<!-- ================ مودال التكبير (Zoom) ================ -->
-<div id="zoomModal" class="hidden fixed inset-0 z-60 bg-black bg-opacity-95 flex items-center justify-center p-4">
-  <img id="zoomedImage" src="" alt="Zoomed" class="max-w-full max-h-full object-contain cursor-zoom-out" />
-</div>
-
-<!-- ================ كود JavaScript المحدث ================ -->
-<script>
-  const projects = {
-    branding: [
-      "projects/images/brand_adentity/9.jpg",
-      "projects/images/brand_adentity/8.jpg",
-      "projects/images/brand_adentity/10.jpg",
-      "projects/images/brand_adentity/11.jpg",
-      "projects/images/brand_adentity/12.jpg",
-      "projects/images/brand_adentity/13.png",
-      "projects/images/brand_adentity/14.jpg",
-      "projects/images/brand_adentity/15.jpg",
-    
-    ],
-    mobile: [
-      "projects/images/mobile/40.png",
-      "projects/images/mobile/41.png",
-      "projects/images/mobile/43.png",
-      "projects/images/mobile/42.jpg",
-      "projects/images/mobile/mobile.jpg"
-    ],
-    packaging: [
-      "projects/images/packaging/44.jpg",
-      "projects/images/packaging/46.jpg",
-      "projects/images/packaging/packaging.jp",
-     
-    ],
-       loges: [
-      "projects/images/loges/22.jpg",
-      "projects/images/loges/23.jpg",
-      "projects/images/loges/24.png",
-      "projects/images/loges/25.png",
-      "projects/images/loges/26.jpeg",
-      "projects/images/loges/27.jpg",
-      "projects/images/loges/28.jpg",
-      "projects/images/loges/29.jpg",
-      "projects/images/loges/30.jpg",
-      "projects/images/loges/log.png",
-      "projects/images/loges/loge.jpg"
-    ],
-       social_meade: [
-      "projects/images/social_meade/10.jpg",
-      "projects/images/social_meade/11.jpg",
-      "projects/images/social_meade/14.jpg",
-      "projects/images/social_meade/2_01.jpg",
-      "projects/images/social_meade/8.jpg",
-      "projects/images/social_meade/4.jpg",
-      "projects/images/social_meade/kids.jpg",
-      "projects/images/social_meade/socilal.jpg",
-      "projects/images/social_meade/9.jpg"
-    ],
-       poster_desing: [
-      "projects/images/poster_desing/11.jpg",
-      "projects/images/poster_desing/2025-01.jpg",
-      "projects/images/poster_desing/32.png",
-      "projects/images/poster_desing/33.jpg",
-      "projects/images/poster_desing/poster.jpg"
-    ],
-    // أضف مشاريعك الأخرى هنا
-  };
-
-  let currentProject = [];
-  let currentIndex = 0;
-
-  // فتح المودال
-  document.querySelectorAll('.portfolio-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const key = item.getAttribute('data-project');
-      if (!projects[key]) return;
-
-      currentProject = projects[key];
-      currentIndex = 0;
-      showImage(currentIndex);
-      document.getElementById('projectModal').classList.remove('hidden');
-    });
-  });
-
-  // عرض صورة معينة
-  function showImage(index) {
-    const img = document.getElementById('modalImage');
-    const counter = document.getElementById('imageCounter');
-    img.src = currentProject[index];
-    counter.textContent = `${index + 1} / ${currentProject.length}`;
-  }
-
-  // أزرار التنقل
-  document.getElementById('prevBtn').addEventListener('click', () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      showImage(currentIndex);
-    }
-  });
-
-  document.getElementById('nextBtn').addEventListener('click', () => {
-    if (currentIndex < currentProject.length - 1) {
-      currentIndex++;
-      showImage(currentIndex);
-    }
-  });
-
-  // إغلاق المودال
-  function closeModal() {
-    document.getElementById('projectModal').classList.add('hidden');
-    document.getElementById('zoomModal').classList.add('hidden');
-  }
-
-  document.getElementById('closeModal').addEventListener('click', closeModal);
-  document.getElementById('projectModal').addEventListener('click', (e) => {
-    if (e.target === document.getElementById('projectModal')) closeModal();
-  });
-
-  // دعم لوحة المفاتيح
-  document.addEventListener('keydown', (e) => {
-    if (!document.getElementById('projectModal').classList.contains('hidden')) {
-      if (e.key === 'Escape') closeModal();
-      else if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
-      else if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
-    }
-  });
-
-  // تكبير الصورة عند النقر
-  document.getElementById('modalImage').addEventListener('click', () => {
-    document.getElementById('zoomedImage').src = currentProject[currentIndex];
-    document.getElementById('zoomModal').classList.remove('hidden');
-  });
-
-  // إغلاق تكبير الصورة
-  document.getElementById('zoomModal').addEventListener('click', () => {
-    document.getElementById('zoomModal').classList.add('hidden');
-  });
-</script> 
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="py-20 px-4 bg-black bg-opacity-30">
         <div class="container mx-auto max-w-6xl">
             <div class="text-center mb-16">
-                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                    المهارات | Skills
-                </h2>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">المهارات | Skills</h2>
                 <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
             </div>
             <div class="grid md:grid-cols-2 gap-8">
@@ -425,40 +253,20 @@
                     <h3 class="text-2xl font-semibold mb-6 text-cyan-300">المهارات التقنية | Technical Skills</h3>
                     <div class="space-y-6">
                         <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-lg">Adobe Photoshop</span>
-                                <span class="text-cyan-400">95%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
+                            <div class="flex justify-between mb-2"><span class="text-lg">Adobe Photoshop</span><span class="text-cyan-400">95%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
                         </div>
                         <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-lg">Adobe Illustrator</span>
-                                <span class="text-cyan-400">90%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
+                            <div class="flex justify-between mb-2"><span class="text-lg">Adobe Illustrator</span><span class="text-cyan-400">90%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
                         </div>
                         <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-lg">Adobe InDesign</span>
-                                <span class="text-cyan-400">85%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
+                            <div class="flex justify-between mb-2"><span class="text-lg">Adobe InDesign</span><span class="text-cyan-400">85%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
                         </div>
                         <div>
-                            <div class="flex justify-between mb-2">
-                                <span class="text-lg">Figma</span>
-                                <span class="text-cyan-400">80%</span>
-                            </div>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
+                            <div class="flex justify-between mb-2"><span class="text-lg">Figma</span><span class="text-cyan-400">80%</span></div>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
                         </div>
                     </div>
                 </div>
@@ -466,27 +274,19 @@
                     <h3 class="text-2xl font-semibold mb-6 text-cyan-300">المهارات الإبداعية | Creative Skills</h3>
                     <div class="space-y-4">
                         <div class="flex items-center space-x-4 space-x-reverse">
-                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center">
-                                <i class="fas fa-palette text-white text-xl"></i>
-                            </div>
+                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center"><i class="fas fa-palette text-white text-xl"></i></div>
                             <span class="text-xl">تصميم الهوية البصرية<br>Brand Identity Design</span>
                         </div>
                         <div class="flex items-center space-x-4 space-x-reverse">
-                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center">
-                                <i class="fas fa-tshirt text-white text-xl"></i>
-                            </div>
+                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center"><i class="fas fa-tshirt text-white text-xl"></i></div>
                             <span class="text-xl">تصميم الملابس والطباعة<br>Apparel & Print Design</span>
                         </div>
                         <div class="flex items-center space-x-4 space-x-reverse">
-                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center">
-                                <i class="fas fa-mobile-alt text-white text-xl"></i>
-                            </div>
+                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center"><i class="fas fa-mobile-alt text-white text-xl"></i></div>
                             <span class="text-xl">تصميم واجهات التطبيقات<br>UI/UX Design</span>
                         </div>
                         <div class="flex items-center space-x-4 space-x-reverse">
-                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center">
-                                <i class="fas fa-bullhorn text-white text-xl"></i>
-                            </div>
+                            <div class="w-12 h-12 bg-gradient-to-r from-pink-500 to-cyan-400 rounded-full flex items-center justify-center"><i class="fas fa-bullhorn text-white text-xl"></i></div>
                             <span class="text-xl">الإعلانات والتسويق<br>Advertising & Marketing</span>
                         </div>
                     </div>
@@ -496,101 +296,30 @@
     </section>
 
     <!-- Contact Section -->
-<section id="contact" class="py-20 px-4 bg-black bg-opacity-30">
-    <div class="container mx-auto max-w-4xl">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">
-                تواصل معي | Contact Me
-            </h2>
-            <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
-            <p class="text-xl text-gray-400 mt-6">
-                جاهز لبدء مشروعك القادم؟ دعنا نتحدث!
-            </p>
-            <div class="contact-links mt-4 text-gray-300">
-                <p>📧 albharm47@gmail.com</p>
-                <p>📱 واتساب: +00966550122179</p>
+    <section id="contact" class="py-20 px-4 bg-black bg-opacity-30">
+        <div class="container mx-auto max-w-4xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">تواصل معي | Contact Me</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
+                <p class="text-xl text-gray-400 mt-6">جاهز لبدء مشروعك القادم؟ دعنا نتحدث!</p>
+                <div class="contact-links mt-4 text-gray-300">
+                    <p>📧 albharm47@gmail.com</p>
+                    <p>📱 واتساب: +00966550122179</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 bg-opacity-50 rounded-3xl p-8 backdrop-blur-sm">
+                <form id="contact-form" action="https://formspree.io/f/mgvppkoj" method="POST" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <input type="text" name="name" placeholder="الاسم الكامل | Full Name" required class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent">
+                        <input type="email" name="email" placeholder="البريد الإلكتروني | Email" required class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent">
+                    </div>
+                    <input type="text" name="subject" placeholder="الموضوع | Subject" required class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent">
+                    <textarea name="message" placeholder="رسالتك | Your Message" rows="6" required class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent resize-none"></textarea>
+                    <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-cyan-400 text-white py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300 transform hover:scale-105">إرسال الرسالة | Send Message</button>
+                </form>
             </div>
         </div>
-        <div class="bg-gray-800 bg-opacity-50 rounded-3xl p-8 backdrop-blur-sm">
-            <!-- نموذج الاتصال باستخدام Formspree -->
-            <form id="contact-form" action="https://formspree.io/f/mgvppkoj" method="POST" class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <input 
-                        type="text" 
-                        name="name" 
-                        placeholder="الاسم الكامل | Full Name" 
-                        required
-                        class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
-                    >
-                    <input 
-                        type="email" 
-                        name="email" 
-                        placeholder="البريد الإلكتروني | Email" 
-                        required
-                        class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
-                    >
-                </div>
-                <input 
-                    type="text" 
-                    name="subject" 
-                    placeholder="الموضوع | Subject" 
-                    required
-                    class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
-                >
-                <textarea 
-                    name="message" 
-                    placeholder="رسالتك | Your Message" 
-                    rows="6" 
-                    required
-                    class="w-full px-6 py-4 bg-gray-700 bg-opacity-50 border border-gray-600 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent resize-none"
-                ></textarea>
-                <button 
-                    type="submit" 
-                    class="w-full bg-gradient-to-r from-pink-500 to-cyan-400 text-white py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-cyan-400/25 transition-all duration-300 transform hover:scale-105"
-                >
-                    إرسال الرسالة | Send Message
-                </button>
-            </form>
-        </div>
-    </div>
-</section>
-
-<!-- سكريبت تحسين تجربة المستخدم -->
-<script>
-  document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-
-    const formData = new FormData(this);
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    submitBtn.innerHTML = 'جاري الإرسال...';
-    submitBtn.disabled = true;
-
-    fetch(this.action, {
-      method: 'POST',
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
-      }
-    })
-    .then(response => {
-      if (response.ok) {
-        alert('✅ تم إرسال رسالتك بنجاح!\nسأرد عليك في أقرب وقت.');
-        this.reset();
-      } else {
-        throw new Error('فشل الإرسال');
-      }
-    })
-    .catch(error => {
-      alert('❌ عذراً، حدث خطأ أثناء الإرسال.\nيرجى المحاولة لاحقاً أو مراسلتي مباشرة على البريد.');
-      console.error('Error:', error);
-    })
-    .finally(() => {
-      submitBtn.innerHTML = originalText;
-      submitBtn.disabled = false;
-    });
-  });
-</script>
+    </section>
 
     <!-- Footer -->
     <footer class="py-12 px-4 border-t border-gray-800">
@@ -600,92 +329,185 @@
             </div>
             <div class="english-name text-lg mb-6">Mohamed Omar</div>
             <div class="flex justify-center space-x-6 space-x-reverse mb-8">
-                <a href="https://www.behance.net/mohamedalkteb" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300">
-                    <i class="fab fa-behance"></i>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300">
-                    <i class="fab fa-dribbble"></i>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300">
-                    <i class="fab fa-linkedin"></i>
-                </a>
+                <a href="https://www.behance.net/mohamedalkteb" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300"><i class="fab fa-behance"></i></a>
+                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300"><i class="fab fa-dribbble"></i></a>
+                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-gray-400 hover:text-cyan-300 text-2xl transition-colors duration-300"><i class="fab fa-linkedin"></i></a>
             </div>
-            <p class="text-gray-500">
-                &copy; 2025 محمد عمر | Mohamed Omar. جميع الحقوق محفوظة.
-            </p>
+            <p class="text-gray-500">&copy; 2025 محمد عمر | Mohamed Omar. جميع الحقوق محفوظة.</p>
         </div>
     </footer>
 
     <!-- Portfolio Modal -->
-    <div id="projectModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-90 overflow-y-auto">
-        <div class="min-h-screen flex flex-col items-center justify-start pt-12 px-4">
-            <button class="self-end text-white text-4xl mb-6 hover:text-cyan-300 focus:outline-none">&times;</button>
-            <div id="modalGallery" class="flex flex-wrap justify-center gap-6"></div>
+    <div id="projectModal" class="hidden fixed inset-0 z-50 bg-black bg-opacity-90 flex items-center justify-center p-4">
+        <div class="relative w-full max-w-4xl">
+            <button id="closeModal" class="absolute top-0 right-0 text-white text-4xl z-10 p-2 hover:text-cyan-300 focus:outline-none">&times;</button>
+            <div id="modalImageContainer" class="flex items-center justify-center">
+                <img id="modalImage" src="" alt="Project detail" class="max-h-[80vh] w-auto object-contain rounded-xl shadow-2xl cursor-zoom-in" />
+            </div>
+            <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2"><</button>
+            <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2">></button>
+            <div id="imageCounter" class="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-white text-lg font-medium bg-black bg-opacity-50 px-3 py-1 rounded-full"></div>
         </div>
     </div>
 
+    <!-- Zoom Modal -->
+    <div id="zoomModal" class="hidden fixed inset-0 z-60 bg-black bg-opacity-95 flex items-center justify-center p-4">
+        <img id="zoomedImage" src="" alt="Zoomed" class="max-w-full max-h-full object-contain cursor-zoom-out" />
+    </div>
+
+    <!-- JavaScript -->
     <script>
-        // ✅ عرّف مشاريعك الحقيقية هنا
         const projects = {
             branding: [
-                "images/branding/1.jpg",
-                "images/branding/2.jpg",
-                "images/branding/3.jpg"
+                "projects/images/brand_adentity/9.jpg",
+                "projects/images/brand_adentity/8.jpg",
+                "projects/images/brand_adentity/10.jpg",
+                "projects/images/brand_adentity/11.jpg",
+                "projects/images/brand_adentity/12.jpg",
+                "projects/images/brand_adentity/13.png",
+                "projects/images/brand_adentity/14.jpg",
+                "projects/images/brand_adentity/15.jpg"
             ],
             mobile: [
-                "images/mobile/1.jpg",
-                "images/mobile/2.jpg"
+                "projects/images/mobile/40.png",
+                "projects/images/mobile/41.png",
+                "projects/images/mobile/43.png",
+                "projects/images/mobile/42.jpg",
+                "projects/images/mobile/mobile.jpg"
             ],
             packaging: [
-                "images/packaging/1.jpg",
-                "images/packaging/2.jpg",
-                "images/packaging/3.jpg"
+                "projects/images/packaging/44.jpg",
+                "projects/images/packaging/46.jpg",
+                "projects/images/packaging/packaging.jpg"
             ],
-            poster: [
-                "images/poster/1.jpg"
+            loges: [
+                "projects/images/loges/22.jpg",
+                "projects/images/loges/23.jpg",
+                "projects/images/loges/24.png",
+                "projects/images/loges/25.png",
+                "projects/images/loges/26.jpeg",
+                "projects/images/loges/27.jpg",
+                "projects/images/loges/28.jpg",
+                "projects/images/loges/29.jpg",
+                "projects/images/loges/30.jpg",
+                "projects/images/loges/log.png",
+                "projects/images/loges/loge.jpg"
             ],
-            social: [
-                "images/social/1.jpg",
-                "images/social/2.jpg"
+            social_meade: [
+                "projects/images/social_meade/10.jpg",
+                "projects/images/social_meade/11.jpg",
+                "projects/images/social_meade/14.jpg",
+                "projects/images/social_meade/2_01.jpg",
+                "projects/images/social_meade/8.jpg",
+                "projects/images/social_meade/4.jpg",
+                "projects/images/social_meade/kids.jpg",
+                "projects/images/social_meade/socilal.jpg",
+                "projects/images/social_meade/9.jpg"
             ],
-            logo: [
-                "images/logo/1.jpg",
-                "images/logo/2.jpg"
+            poster_desing: [
+                "projects/images/poster_desing/11.jpg",
+                "projects/images/poster_desing/2025-01.jpg",
+                "projects/images/poster_desing/32.png",
+                "projects/images/poster_desing/33.jpg",
+                "projects/images/poster_desing/poster.jpg"
             ]
         };
 
-        // فتح المشروع عند الضغط
+        let currentProject = [];
+        let currentIndex = 0;
+
         document.querySelectorAll('.portfolio-item').forEach(item => {
             item.addEventListener('click', () => {
                 const key = item.getAttribute('data-project');
-                const gallery = document.getElementById('modalGallery');
-                gallery.innerHTML = '';
-
-                if (projects[key]) {
-                    projects[key].forEach(src => {
-                        const img = document.createElement('img');
-                        img.src = src;
-                        img.alt = "Project detail";
-                        img.className = "max-w-full max-h-[80vh] rounded-xl shadow-2xl";
-                        gallery.appendChild(img);
-                    });
-                    document.getElementById('projectModal').classList.remove('hidden');
-                }
+                if (!projects[key]) return;
+                currentProject = projects[key];
+                currentIndex = 0;
+                showImage(currentIndex);
+                document.getElementById('projectModal').classList.remove('hidden');
             });
         });
 
-        // إغلاق الـ Modal
-        document.querySelector('#projectModal button').addEventListener('click', () => {
-            document.getElementById('projectModal').classList.add('hidden');
+        function showImage(index) {
+            const img = document.getElementById('modalImage');
+            const counter = document.getElementById('imageCounter');
+            img.src = currentProject[index];
+            counter.textContent = `${index + 1} / ${currentProject.length}`;
+        }
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showImage(currentIndex);
+            }
         });
 
-        document.getElementById('projectModal').addEventListener('click', (e) => {
-            if (e.target === document.getElementById('projectModal')) {
-                document.getElementById('projectModal').classList.add('hidden');
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            if (currentIndex < currentProject.length - 1) {
+                currentIndex++;
+                showImage(currentIndex);
             }
+        });
+
+        function closeModal() {
+            document.getElementById('projectModal').classList.add('hidden');
+            document.getElementById('zoomModal').classList.add('hidden');
+        }
+
+        document.getElementById('closeModal').addEventListener('click', closeModal);
+        document.getElementById('projectModal').addEventListener('click', (e) => {
+            if (e.target === document.getElementById('projectModal')) closeModal();
+        });
+
+        document.getElementById('modalImage').addEventListener('click', () => {
+            document.getElementById('zoomedImage').src = currentProject[currentIndex];
+            document.getElementById('zoomModal').classList.remove('hidden');
+        });
+
+        document.getElementById('zoomModal').addEventListener('click', () => {
+            document.getElementById('zoomModal').classList.add('hidden');
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (!document.getElementById('projectModal').classList.contains('hidden')) {
+                if (e.key === 'Escape') closeModal();
+                else if (e.key === 'ArrowLeft') document.getElementById('prevBtn').click();
+                else if (e.key === 'ArrowRight') document.getElementById('nextBtn').click();
+            }
+        });
+    </script>
+
+    <!-- Contact Form Script -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = 'جاري الإرسال...';
+            submitBtn.disabled = true;
+
+            fetch(this.action, {
+                method: 'POST',
+                body: formData,
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('✅ تم إرسال رسالتك بنجاح!\nسأرد عليك في أقرب وقت.');
+                    this.reset();
+                } else {
+                    throw new Error('فشل الإرسال');
+                }
+            })
+            .catch(error => {
+                alert('❌ عذراً، حدث خطأ أثناء الإرسال.\nيرجى المحاولة لاحقاً أو مراسلتي مباشرة على البريد.');
+                console.error('Error:', error);
+            })
+            .finally(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
         });
     </script>
 
