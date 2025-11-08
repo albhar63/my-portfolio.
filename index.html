@@ -5,12 +5,12 @@
     <meta http-equiv="Content-Language" content="ar, en">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
+    <!-- SEO -->
     <title>محمد عمر | مصمم جرافيك محترف | Mohamed Omar | Graphic Designer</title>
     <meta name="description" content="مصمم جرافيك محترف من السعودية، أتخصص في الهوية البصرية، الشعارات، التغليف، واجهات التطبيقات، والإعلانات. أكثر من 5 سنوات خبرة و50 عميلاً.">
     <meta name="keywords" content="مصمم جرافيك, هوية بصرية, تصميم شعار, تصميم تغليف, UI UX, سوشيال ميديا, graphic designer, Saudi Arabia">
 
-    <!-- Open Graph / Twitter -->
+    <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://albhar63.github.io/">
     <meta property="og:title" content="محمد عمر | مصمم جرافيك محترف">
@@ -43,10 +43,7 @@
             50% { background-position: 100% 50%; }
             100% { background-position: 0% 50%; }
         }
-        .nav-link {
-            position: relative;
-            transition: color 0.3s ease;
-        }
+        .nav-link { position: relative; transition: color 0.3s ease; }
         .nav-link::after {
             content: '';
             position: absolute;
@@ -99,7 +96,7 @@
             padding: 14px;
         }
 
-        /* أزرار التنقل في المودال */
+        /* أزرار المودال */
         #prevBtn, #nextBtn {
             background: transparent;
             border: 2px solid #00bfff;
@@ -122,6 +119,15 @@
             color: white;
             transform: scale(1.15);
             box-shadow: 0 0 20px rgba(0, 191, 255, 0.8);
+        }
+
+        /* عداد الصور */
+        #imageCounter {
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -186,12 +192,11 @@
         </div>
     </section>
 
-    <!-- Portfolio -->
+    <!-- Portfolio: 6 مشاريع -->
     <section id="portfolio" class="py-20 bg-gray-900">
         <div class="container mx-auto px-6">
             <h2 class="text-4xl font-bold text-center mb-12 text-cyan-300">أعمالي</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Projects -->
                 <div class="portfolio-item cursor-pointer" data-project="branding">
                     <img src="projects/images/brand_adentity/9.jpg" alt="هوية بصرية" class="w-full h-64 object-cover rounded-2xl shadow-lg">
                     <h3 class="mt-4 text-xl font-semibold text-cyan-300">هوية بصرية</h3>
@@ -199,6 +204,18 @@
                 <div class="portfolio-item cursor-pointer" data-project="mobile">
                     <img src="projects/images/mobile/mobile.jpg" alt="واجهة تطبيق" class="w-full h-64 object-cover rounded-2xl shadow-lg">
                     <h3 class="mt-4 text-xl font-semibold text-cyan-300">واجهة تطبيق</h3>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="packaging">
+                    <img src="projects/images/packaging/packaging.jpg" alt="تغليف" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <h3 class="mt-4 text-xl font-semibold text-cyan-300">تصميم تغليف</h3>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="poster_desing">
+                    <img src="projects/images/poster_desing/poster.jpg" alt="بوستر" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <h3 class="mt-4 text-xl font-semibold text-cyan-300">تصميم بوستر</h3>
+                </div>
+                <div class="portfolio-item cursor-pointer" data-project="social_meade">
+                    <img src="projects/images/social_meade/14.jpg" alt="سوشيال ميديا" class="w-full h-64 object-cover rounded-2xl shadow-lg">
+                    <h3 class="mt-4 text-xl font-semibold text-cyan-300">محتوى السوشيال ميديا</h3>
                 </div>
                 <div class="portfolio-item cursor-pointer" data-project="loges">
                     <img src="projects/images/loges/24.png" alt="شعار" class="w-full h-64 object-cover rounded-2xl shadow-lg">
@@ -208,13 +225,16 @@
         </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section with Icons -->
     <section id="skills" class="py-20 px-4 bg-black bg-opacity-30">
-        <div class="container mx-auto max-w-6xl text-center">
-            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">المهارات | Skills</h2>
-            <div class="grid md:grid-cols-2 gap-8 text-gray-300">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-cyan-400">المهارات | Skills</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-cyan-400 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
                 <div>
-                    <h3 class="text-2xl font-semibold mb-6 text-cyan-300">المهارات التقنية</h3>
+                    <h3 class="text-2xl font-semibold mb-6 text-cyan-300">المهارات التقنية | Technical Skills</h3>
                     <div class="space-y-4">
                         <div>Adobe Photoshop</div>
                         <div>Adobe Illustrator</div>
@@ -223,12 +243,24 @@
                     </div>
                 </div>
                 <div>
-                    <h3 class="text-2xl font-semibold mb-6 text-cyan-300">المهارات الإبداعية</h3>
+                    <h3 class="text-2xl font-semibold mb-6 text-cyan-300">المهارات الإبداعية | Creative Skills</h3>
                     <div class="space-y-4">
-                        <div>الهوية البصرية</div>
-                        <div>الطباعة والملبوسات</div>
-                        <div>واجهات التطبيقات</div>
-                        <div>الإعلانات</div>
+                        <div class="flex items-center space-x-3 space-x-reverse">
+                            <i class="fas fa-palette text-cyan-300"></i>
+                            <span>تصميم الهوية البصرية</span>
+                        </div>
+                        <div class="flex items-center space-x-3 space-x-reverse">
+                            <i class="fas fa-tshirt text-cyan-300"></i>
+                            <span>تصميم الملابس والطباعة</span>
+                        </div>
+                        <div class="flex items-center space-x-3 space-x-reverse">
+                            <i class="fas fa-mobile-alt text-cyan-300"></i>
+                            <span>تصميم واجهات التطبيقات</span>
+                        </div>
+                        <div class="flex items-center space-x-3 space-x-reverse">
+                            <i class="fas fa-bullhorn text-cyan-300"></i>
+                            <span>الإعلانات والتسويق</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -244,7 +276,7 @@
                 <p class="text-gray-400 mt-4">📧 albharm47@gmail.com | 📱 +00966550122179</p>
             </div>
             <div class="bg-gray-800 bg-opacity-50 rounded-3xl p-8">
-                <form id="contact-form" action="https://formspree.io/f/mgvppkoj" method="POST" class="space-y-6">
+                <form id="contact-form" action="https://formspree.io/f/mgvppkoj" method="POST" class="space-y-4">
                     <input type="text" name="name" placeholder="الاسم" required class="w-full px-4 py-3 bg-gray-700 rounded-lg text-white placeholder-gray-400">
                     <input type="email" name="email" placeholder="البريد الإلكتروني" required class="w-full px-4 py-3 bg-gray-700 rounded-lg text-white placeholder-gray-400">
                     <textarea name="message" placeholder="رسالتك" rows="5" required class="w-full px-4 py-3 bg-gray-700 rounded-lg text-white placeholder-gray-400"></textarea>
@@ -267,16 +299,41 @@
             <img id="modalImage" class="w-full max-h-[80vh] object-contain rounded-xl">
             <button id="prevBtn" class="absolute left-4 top-1/2 transform -translate-y-1/2">❮</button>
             <button id="nextBtn" class="absolute right-4 top-1/2 transform -translate-y-1/2">❯</button>
+            <div id="imageCounter" class="absolute bottom-4 left-1/2 transform -translate-x-1/2"></div>
         </div>
     </div>
 
     <!-- JavaScript -->
     <script>
-        // مشاريع البورتفوليو
         const projects = {
-            branding: ["projects/images/brand_adentity/9.jpg", "projects/images/brand_adentity/8.jpg"],
-            mobile: ["projects/images/mobile/mobile.jpg", "projects/images/mobile/40.png"],
-            loges: ["projects/images/loges/24.png", "projects/images/loges/22.jpg"]
+            branding: [
+                "projects/images/brand_adentity/9.jpg",
+                "projects/images/brand_adentity/8.jpg",
+                "projects/images/brand_adentity/10.jpg"
+            ],
+            mobile: [
+                "projects/images/mobile/40.png",
+                "projects/images/mobile/41.png",
+                "projects/images/mobile/mobile.jpg"
+            ],
+            packaging: [
+                "projects/images/packaging/44.jpg",
+                "projects/images/packaging/packaging.jpg"
+            ],
+            poster_desing: [
+                "projects/images/poster_desing/11.jpg",
+                "projects/images/poster_desing/poster.jpg"
+            ],
+            social_meade: [
+                "projects/images/social_meade/14.jpg",
+                "projects/images/social_meade/10.jpg",
+                "projects/images/social_meade/11.jpg"
+            ],
+            loges: [
+                "projects/images/loges/24.png",
+                "projects/images/loges/22.jpg",
+                "projects/images/loges/23.jpg"
+            ]
         };
 
         let currentImages = [];
@@ -288,21 +345,26 @@
                 if (!projects[key]) return;
                 currentImages = projects[key];
                 currentIndex = 0;
-                document.getElementById('modalImage').src = currentImages[0];
+                showImage();
                 document.getElementById('projectModal').classList.remove('hidden');
             });
         });
 
+        function showImage() {
+            document.getElementById('modalImage').src = currentImages[currentIndex];
+            document.getElementById('imageCounter').textContent = `${currentIndex + 1} / ${currentImages.length}`;
+        }
+
         document.getElementById('prevBtn').onclick = () => {
             if (currentIndex > 0) {
                 currentIndex--;
-                document.getElementById('modalImage').src = currentImages[currentIndex];
+                showImage();
             }
         };
         document.getElementById('nextBtn').onclick = () => {
             if (currentIndex < currentImages.length - 1) {
                 currentIndex++;
-                document.getElementById('modalImage').src = currentImages[currentIndex];
+                showImage();
             }
         };
 
@@ -315,7 +377,7 @@
             }
         };
 
-        // نموذج الاتصال
+        // Contact Form
         document.getElementById('contact-form').onsubmit = (e) => {
             e.preventDefault();
             const btn = e.target.querySelector('button');
