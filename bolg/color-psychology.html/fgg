@@ -1,1 +1,50 @@
-color-psychology
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>علم النفس اللوني في التصميم الجرافيكي | محمد عمر</title>
+  <meta name="description" content="كيف تختار الألوان التي تُثير الثقة، الحماس، أو الهدوء حسب طبيعة عملك؟ دليل عملي لمصممي الجرافيك.">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white leading-relaxed">
+  <header class="py-6 px-4 text-center">
+    <a href="index.html" class="text-cyan-400 hover:text-cyan-300 font-bold">&larr; العودة للمدونة</a>
+  </header>
+
+  <article class="max-w-2xl mx-auto px-4 py-8">
+    <h1 class="text-2xl md:text-3xl font-bold mb-4">علم النفس اللوني في التصميم الجرافيكي</h1>
+    <p class="text-cyan-400 mb-6">1 نوفمبر 2025</p>
+
+    <p class="mb-4">
+      اللون ليس مجرد تزيين — بل لغة صامتة تُحدث انطباعًا فوريًا في عقل العميل.
+    </p>
+
+    <p class="mb-4">
+      إليك بعض الدلالات الشائعة:
+    </p>
+
+    <ul class="list-disc pr-6 mb-6 text-gray-300 space-y-2">
+      <li><strong>الأزرق</strong>: الثقة، الاحترافية (مثالي للبنوك والتقنيات)</li>
+      <li><strong>الأحمر</strong>: الطاقة، الإلحاح (مناسب للعروض والمطاعم)</li>
+      <li><strong>الأخضر</strong>: النمو، الطبيعة، الصحة (للمتاجر العضوية أو الطبية)</li>
+      <li><strong>الأسود</strong>: الفخامة، البساطة (للعلامات الفاخرة أو الراقية)</li>
+      <li><strong>الذهبي</strong>: التميز، الجودة (للعلامات الراقية في الموضة أو الفنادق)</li>
+    </ul>
+
+    <p>
+      تذكّر: لا تختار لونًا لأنك "تحبه"، بل لأن جمهورك المستهدف <strong>يتفاعل معه</strong>.
+    </p>
+
+    <hr class="my-10 border-gray-700">
+
+    <div class="text-center">
+      <a href="index.html" class="text-cyan-400 font-medium hover:underline">← العودة لقائمة المقالات</a>
+    </div>
+  </article>
+
+  <footer class="py-10 text-center text-gray-500 text-sm">
+    © 2025 محمد عمر. جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>
