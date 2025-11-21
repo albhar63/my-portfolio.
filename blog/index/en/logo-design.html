@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Professional strategies for timeless logo design, with real client case studies.">
+  <title>Logo Design: Simplicity & Identity</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    blockquote {
+      border-left: 4px solid #00ffff;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-200 leading-relaxed">
 
+  <!-- Language toggle -->
+  <div class="bg-gray-800 py-3 text-center">
+    <button 
+      onclick="switchLanguage()"
+      class="px-4 py-1.5 bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-lg transition flex items-center gap-2 mx-auto"
+    >
+      <span>🌐</span>
+      Read in Arabic | اقرأ بالعربية
+    </button>
+  </div>
+
+  <header class="text-center py-16 px-4">
+    <div class="bg-gray-800 border-2 border-cyan-400 rounded-2xl inline-block px-8 py-4 mb-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-cyan-300">
+        Logo Design: Simplicity & Identity
+      </h1>
+    </div>
+    <p class="text-gray-400">November 21, 2025 — By Muhammad Umar</p>
+  </header>
+
+  <article class="max-w-4xl mx-auto px-4 pb-20 text-lg space-y-8">
+
+    <p>
+      Is a logo just a symbol? Or is it the soul of a brand?  
+      In a world saturated with visual noise, a logo is often the first thing seen—and sometimes, the last thing forgotten.  
+      But great design isn’t measured by aesthetics alone—it’s judged by its ability to endure, adapt, and speak for the brand across time.
+    </p>
+
+    <img 
+      src="../images/placeholder.jpg" 
+      alt="Professional logo design shown across applications: website, business card, and packaging"
+      class="w-full max-w-3xl h-auto mx-auto rounded-2xl shadow-xl"
+    />
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">Why do 80% of modern logos fail?</h2>
+    <p>
+      Because they’re designed to impress—not to function.  
+      A logo isn’t art—it’s a communication tool.  
+      Most common mistakes:
+    </p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+      <li>Overly complex details (illegible on small screens)</li>
+      <li>Reliance on effects that don’t work in black and white</li>
+      <li>Detachment from the brand’s core message</li>
+      <li>Designing for trends instead of timelessness</li>
+    </ul>
+
+    <blockquote>
+      "A great logo isn’t explained—it’s felt."
+    </blockquote>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">Lessons from real client projects</h2>
+    <p>
+      In a recent project for an organic coffee startup, the client wanted a logo that “blends heritage with modernity.”  
+      Instead of drawing a cliché coffee cup, I crafted a symbol that combines:
+    </p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+      <li>An abstract coffee bean form</li>
+      <li>A classic Arabic typeface with contemporary refinements</li>
+      <li>A natural green hue extracted from real coffee leaves</li>
+    </ul>
+    <p>
+      Result? A logo that works seamlessly on coffee bags, mobile apps, and storefront signage—without losing identity.
+    </p>
+
+    <img 
+      src="../images/placeholder.jpg" 
+      alt="Before and after: logo redesign for an organic coffee brand"
+      class="w-full max-w-2xl h-auto mx-auto rounded-xl shadow-lg"
+    />
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">Five principles of a timeless logo</h2>
+    <ol class="list-decimal pl-6 space-y-3 text-gray-300">
+      <li><span class="font-bold text-cyan-300">Simplicity:</span> The simpler, the stronger.</li>
+      <li><span class="font-bold text-cyan-300">Scalability:</span> Must be clear at 1cm or 10 meters.</li>
+      <li><span class="font-bold text-cyan-300">Distinctiveness:</span> Nothing like competitors in the market.</li>
+      <li><span class="font-bold text-cyan-300">Appropriateness:</span> Matches the brand’s nature (don’t give a kids’ brand a serious corporate look).</li>
+      <li><span class="font-bold text-cyan-300">Longevity:</span> Unaffected by passing visual trends.</li>
+    </ol>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">Final advice</h2>
+    <p>
+      Don’t start by drawing.  
+      Start by asking:  
+      Who is your audience? What are your brand’s values? What makes you different?  
+      The answers—not colors or fonts—are what truly generate a logo.
+    </p>
+
+  </article>
+
+  <div class="text-center pb-10">
+    <a href="../index.html" class="text-cyan-400 hover:underline font-medium">← Back to Blog</a>
+  </div>
+
+  <script>
+    function switchLanguage() {
+      const url = window.location.href;
+      if (url.includes('/en/')) {
+        window.location.href = url.replace('/en/', '/ar/');
+      }
+    }
+  </script>
+
+</body>
+</html>
