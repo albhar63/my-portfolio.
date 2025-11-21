@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="A professional guide to printed stationery: from business cards to catalogs, with practical printing tips.">
+  <title>Print & Stationery Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    blockquote {
+      border-left: 4px solid #00ffff;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-200 leading-relaxed">
 
+  <!-- Language toggle -->
+  <div class="bg-gray-800 py-3 text-center">
+    <button 
+      onclick="switchLanguage()"
+      class="px-4 py-1.5 bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-lg transition flex items-center gap-2 mx-auto"
+    >
+      <span>🌐</span>
+      Read in Arabic | اقرأ بالعربية
+    </button>
+  </div>
+
+  <header class="text-center py-16 px-4">
+    <div class="bg-gray-800 border-2 border-cyan-400 rounded-2xl inline-block px-8 py-4 mb-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-cyan-300">
+        Print & Stationery Design
+      </h1>
+    </div>
+    <p class="text-gray-400">November 21, 2025 — By Muhammad Umar</p>
+  </header>
+
+  <article class="max-w-4xl mx-auto px-4 pb-20 text-lg space-y-8">
+
+    <p>
+      In an increasingly digital world, printed design becomes a **sensory gift**.  
+      A business card, catalog, envelope, or even a sticker—these are tangible touches that make clients feel your work is **real, physical, and detail-oriented**.
+    </p>
+
+    <img 
+      src="../images/placeholder.jpg" 
+      alt="Complete stationery suite: business cards, envelopes, catalog, stickers"
+      class="w-full max-w-3xl h-auto mx-auto rounded-2xl shadow-xl"
+    />
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">Why is print design still relevant?</h2>
+    <p>
+      Because it engages the senses.  
+      The client doesn’t just see—it **touches, smells, and keeps**.  
+      A premium business card stays in a wallet for months. A beautiful catalog sits on a client’s desk.  
+      These aren’t just “prints”—they’re **silent sales tools**.
+    </p>
+
+    <blockquote>
+      "Digital design is seen. Print design is kept."
+    </blockquote>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">Principles of professional print design</h2>
+    
+    <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-300">1. Design for a physical medium</h3>
+    <p>
+      Never use your web file for print!  
+      - Image resolution: 300 DPI (not 72)  
+      - Color mode: CMYK (not RGB)  
+      - Margins: add bleed (3mm) and safety margin (5mm)  
+      These small details separate “professional” from “amateur.”
+    </p>
+
+    <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-300">2. Choose paper as a design element</h3>
+    <p>
+      Paper isn’t a backdrop—it’s part of the design.  
+      - Thick cardstock for business cards  
+      - Glossy paper for luxury catalogs  
+      - Recycled paper for sustainable brands  
+      Collaborate with your printer early to see real physical samples.
+    </p>
+
+    <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-300">3. Don’t forget practicality</h3>
+    <p>
+      - Does the card fit in a suit pocket?  
+      - Is the type too small to read without glasses?  
+      - Are key details (phone, website) prominent?  
+      Test your design in real life before large-scale printing.
+    </p>
+
+    <img 
+      src="../images/placeholder.jpg" 
+      alt="Comparison of business cards with different materials and sizes"
+      class="w-full max-w-2xl h-auto mx-auto rounded-xl shadow-lg"
+    />
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">A workshop tip</h2>
+    <p>
+      For a French fashion brand, we designed a catalog on thick board wrapped in fabric, with hand-applied gold foil.  
+      It cost 30% more—but the client said: “Every client who opened it felt they were holding a piece of art.”  
+      Investing in quality translates into unforgettable impressions.
+    </p>
+
+  </article>
+
+  <div class="text-center pb-10">
+    <a href="../index.html" class="text-cyan-400 hover:underline font-medium">← Back to Blog</a>
+  </div>
+
+  <script>
+    function switchLanguage() {
+      const url = window.location.href;
+      if (url.includes('/en/')) {
+        window.location.href = url.replace('/en/', '/ar/');
+      }
+    }
+  </script>
+
+</body>
+</html>
