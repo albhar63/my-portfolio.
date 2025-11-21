@@ -1,1 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="How to design social media content that attracts, engages, and converts followers into customers. A pro guide for content designers.">
+  <title>Social Media Design</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    blockquote {
+      border-left: 4px solid #00ffff;
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+      font-style: italic;
+      color: #e0e0e0;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-gray-200 leading-relaxed">
 
+  <!-- Language toggle -->
+  <div class="bg-gray-800 py-3 text-center">
+    <button 
+      onclick="switchLanguage()"
+      class="px-4 py-1.5 bg-cyan-500 hover:bg-cyan-400 text-black font-bold rounded-lg transition flex items-center gap-2 mx-auto"
+    >
+      <span>🌐</span>
+      Read in Arabic | اقرأ بالعربية
+    </button>
+  </div>
+
+  <header class="text-center py-16 px-4">
+    <div class="bg-gray-800 border-2 border-cyan-400 rounded-2xl inline-block px-8 py-4 mb-6">
+      <h1 class="text-3xl md:text-4xl font-bold text-cyan-300">
+        Social Media Design
+      </h1>
+    </div>
+    <p class="text-gray-400">November 21, 2025 — By Muhammad Umar</p>
+  </header>
+
+  <article class="max-w-4xl mx-auto px-4 pb-20 text-lg space-y-8">
+
+    <p>
+      Social media is no longer just a place to post photos.  
+      It’s now a **platform for selling, connecting, and building community**.  
+      And design here isn’t decoration—it’s a **visual strategy** that determines: who sees the post, what grabs them, and how they’ll react.
+    </p>
+
+    <img 
+      src="../images/placeholder.jpg" 
+      alt="Diverse social media content designs for Instagram, TikTok, and LinkedIn"
+      class="w-full max-w-3xl h-auto mx-auto rounded-2xl shadow-xl"
+    />
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">Why does 90% of social media content fail?</h2>
+    <p>
+      Because designers start with visuals—not understanding.  
+      Before opening Photoshop, ask:
+    </p>
+    <ul class="list-disc pl-6 space-y-2 text-gray-300">
+      <li>What’s the goal of this post? (Awareness, promotion, engagement?)</li>
+      <li>Who’s the audience? What’s their visual language?</li>
+      <li>Where will it appear? (Instagram? TikTok? LinkedIn?)</li>
+      <li>What emotion should it evoke? (Inspiration, curiosity, trust?)</li>
+    </ul>
+    <p>
+      Without answers, design becomes just “noise” in a sea of content.
+    </p>
+
+    <blockquote>
+      "Good content gets seen. Strategic content makes people feel, act, and convert."
+    </blockquote>
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">Principles of effective social media design</h2>
+    
+    <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-300">1. Mobile-first priority</h3>
+    <p>
+      90% of users are on mobile. So:  
+      - Use only large, legible text  
+      - Keep key elements in the center (not edges)  
+      - Avoid fine details that disappear on small screens
+    </p>
+
+    <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-300">2. Visual consistency</h3>
+    <p>
+      Don’t change colors or fonts post to post.  
+      Use the same palette, same headline styles, same photo treatment.  
+      This builds “visual recognition”—your audience knows it’s you before even seeing the logo.
+    </p>
+
+    <h3 class="text-xl font-semibold mt-6 mb-3 text-cyan-300">3. Design per platform</h3>
+    <p>
+      - Instagram: aesthetic, visual, image-driven  
+      - LinkedIn: professional, text-focused, value-oriented  
+      - TikTok: fast, dynamic, must grab in 0.5 seconds  
+      Never post the same design everywhere!
+    </p>
+
+    <img 
+      src="../images/placeholder.jpg" 
+      alt="Same concept adapted for each platform: Instagram, LinkedIn, TikTok"
+      class="w-full max-w-2xl h-auto mx-auto rounded-xl shadow-lg"
+    />
+
+    <h2 class="text-2xl font-bold mt-10 mb-4 text-cyan-400">A tip from my experience</h2>
+    <p>
+      For a new beauty brand, I built a “content library”:  
+      - 5 Reels templates  
+      - 3 static post styles  
+      - A dynamic color system (core + seasonal)  
+      Result? Their content team produces 3x faster, and the audience recognizes the brand at first glance.
+    </p>
+
+  </article>
+
+  <div class="text-center pb-10">
+    <a href="../index.html" class="text-cyan-400 hover:underline font-medium">← Back to Blog</a>
+  </div>
+
+  <script>
+    function switchLanguage() {
+      const url = window.location.href;
+      if (url.includes('/en/')) {
+        window.location.href = url.replace('/en/', '/ar/');
+      }
+    }
+  </script>
+
+</body>
+</html>
